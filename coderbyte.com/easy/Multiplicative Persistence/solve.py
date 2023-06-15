@@ -9,6 +9,7 @@ because 3 * 9 = 27 then 2 * 7 = 14 and finally 1 * 4 = 4 and you stop at 4.
 '''
 def MultiplicativePersistence(num): 
    steps = 0
+   num = int(num)
    while num > 9:
      snum = str(num)
      sdigits = list(snum)
@@ -19,8 +20,6 @@ def MultiplicativePersistence(num):
      steps = steps + 1
    return steps
 
-    
 # keep this function call here  
 # to see how to enter arguments in Python scroll down
-print MultiplicativePersistence(raw_input())  
-
+print(MultiplicativePersistence(input()))
